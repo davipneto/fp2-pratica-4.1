@@ -15,8 +15,12 @@ public class Circulo extends Elipse {
         super(2*raio,2*raio);
     }
     
+    public double getRaio(){
+        return getEixo1()/2;
+    }
+    
     @Override
     public double getPerimetro(){
-        return (Math.PI*getEixo1());
+        return (2*Math.PI*getRaio());
     }
 }
